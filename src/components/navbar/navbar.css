@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat&display=swap');
+
+.navbar{
+  width: 100%;
+  height: 55px;
+  background: #2C2B2E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  align-items: center;
+  
+  position: fixed;
+
+}
+
+.logo{
+    margin-left: 15%;
+   color: #fed136;
+   font-family: 'Kaushan Script', cursive;
+   font-size: 20px;
+}
+.menu{
+    
+    flex-direction: row;
+    color: white;
+    margin-right: 200px;
+    display: none;
+}
+.menu li {
+    margin: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.hamburger{
+    width: 75px;
+    height: 38px;
+    background: #fed136;
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15%;
+}
+@media (min-width: 768px){
+.logo{
+    margin-left: 2%;
+}
+.hamburger{
+    margin-right: 2%;
+}
+}
+@media (min-width: 992px){
+.menu{
+    display: flex;
+}
+.hamburger{
+    display: none;
+   
+}
+.menu2{
+    
+    display: none;
+}
+.toggle{
+    display: none;
+}
+
+}
+
+
+
+
+.menu2{
+    width: 100%;
+    height:210px;
+    background: #2C2B2E;    
+    
+    position: fixed;
+    
+    top: -200px;
+    z-index: -10;
+    transition: .8s;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+.toggle{
+    
+    top:50px;
+    
+    
+}
+
+.menu2 li, .toggle li {
+    color: white;
+    font-size: 14.4px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40px;
+    
+}
+
+
+
